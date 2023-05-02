@@ -26,7 +26,56 @@ Our objective is to find all the heads of the planes and shoot them down. Once t
   +         +++++        *+++        ++++*
  +++          *           + +        + +
                           +            +
-
+Secondly, the game Casino, will simulate two betting strategies: Martingale and d'Alembert. This game includes three functions that allow you to choose which betting strategy to simulate.
+The first function, called "casino", allows you to choose between the Martingale and d'Alembert betting strategies. The Martingale strategy is a popular betting system that requires you to double your bet after every loss until you win. The idea is that when you do win, you will recover all of your losses and make a profit equal to your original bet. The d'Alembert strategy, on the other hand, is a more conservative betting system that requires you to increase your bet by one unit after every loss and decrease it by one unit after every win.
+The second function, "Martingale", simulates the Martingale betting strategy. It takes your starting capital as input and simulates the strategy until either you reach a predetermined profit or you run out of capital. 
+The third function, "dAlembert", simulates the d'Alembert betting strategy. It takes your current balance as input and simulates the strategy until either you reach a predetermined profit or you run out of balance.
+Overall, in this game you can earn money to purchase tools which will help you in later games, but risks also lies here, you may lost all your money and have nothing to rely on in the rest of the game.
+Thirdly, in the game Riddle, You will read the riddle questions and give one word answer. There are five questions in total. If you get one correct answer, 100 points will be awarded, and you need 300 points to win the game. When you encounter problems to get a correct answer, you can spend 100 coins to get a hint from Verthandi. The coins are from the money you earned.
+Lastly, the game Blackjack obtains the fundamental principle of the game remains unchanged from that of the standard version of Blackjack.
+For your reference, the rules of blackjack obtained from an online search are as follows:
+In Blackjack, each player is dealt two cards, and the dealer is dealt one card face up and one card face down. The cards are valued as follows: numbered cards are worth their face value, face cards (Jack, Queen, and King) are worth 10, and an Ace can be worth either 1 or 11.
+After the initial deal, players have the option to "hit" (receive additional cards) or "stand" (keep their current hand). The goal is to have a hand value of 21 or as close to 21 as possible without going over. If a player's hand exceeds 21, they lose (known as "busting").
+Once all players have finished their turn, the dealer reveals their face-down card and must hit until they have a hand value of 17 or higher. If the dealer busts, all remaining players win. If the dealer does not bust, the player with the highest hand value that doesn't exceed 21 wins.
+The following the format for the game's interaction, which outlines the output that the program will provide at each step and the input that is expected from you.
+Initially, the game will display your current available funds and prompt you to choose the desired betting amount.
+Sample output:
+You have 1000 coins. Please enter your bet:
+Suppose that we wish to place a wager of 500 coins.
+Sample input:
+500
+Once the bet is placed, the game proceeds to shuffle the deck of cards and deal two cards to both the dealer and the player.
+Sample output:
+Shuffling...
+-------------------------------------------------
+| Dealer                | Player                 |
+-------------------------------------------------
+| Ace of Spades         | Four of Clubs          |
+| Hole Card             | King of Spades         |
+-------------------------------------------------
+| Hand Value:        ?? | Hand Value:         14 |
+-------------------------------------------------
+Do you want to hit (h) or stand (s)?
+Our current hand value is only 14, which is quite distant from the desired value of 21, and therefore, we might consider taking an additional card.
+Sample input:
+Once the hit decision is made, the game will show the dealer's newly dealt card and the resulting hand value. The game will check whether the player has exceeded a hand value of 21; if so, the player will lose and the game will deduct coins according to the initial bet. If the player has not busted, the game will continue to offer the option of either hitting to receive additional cards or standing to keep the current hand.
+Sample output:
+|                       | Five of Clubs          |
+-------------------------------------------------
+| Hand Value:        ?? | Hand Value:         19 |
+-------------------------------------------------
+Do you want to hit (h) or stand (s)? 
+We might decide to stand at this point to avoid the risk of busting by taking another card since our hand value of 19 is already close to 21.
+Sample input:
+After a player decides to stand in the game of Blackjack, the dealer's face-down card (hole card) will be revealed and the dealer will then draw cards according to set rules. Then, the game will display the outcome of the game and either add or deduct coins from the player's bet accordingly. Following that, the game will display the present balance of the player and present a choice to continue playing or not.
+Sample output 1:
+| Two of Hearts         |                        |
+| Hand Value:        13 | Hand Value:         19 |
+| Queen of Diamonds     |                        |
+| Hand Value:        13 | Hand Value:         19 |
+| Seven of Diamonds     |                        |
+| Hand Value:        20 | Hand Value:         19 |
+Dealer wins! Player hand value: 19, Dealer hand value: 20
 Current money: 500
 Do you want to continue the game? (y/n): 
 Opting for "yes" would result in the game being restarted with a reshuffle and redealing of the cards, while opting for "no" would cause the game to return to the main game.
@@ -44,4 +93,3 @@ There are no non-standard libraries in C/C++ be used in our games.
 Compilation and execution functions
 Due to the presence of our makefile, players could simply enter make under linux environments to compile games. 
 In the start of the game, players could choose to load the last game or start a new game. By pressing the key “Enter”, the scripts would be outputted and game would proceed.
-
