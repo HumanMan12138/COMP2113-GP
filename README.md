@@ -1,4 +1,4 @@
-# COMP2113-GP
+COMP2113 Group Project
 
 Group Members
 Hu Manman 3035827926
@@ -26,7 +26,6 @@ Our objective is to find all the heads of the planes and shoot them down. Once t
   +         +++++        *+++        ++++*
  +++          *           + +        + +
                           +            +
-                          
 Secondly, the game Casino, will simulate two betting strategies: Martingale and d'Alembert. This game includes three functions that allow you to choose which betting strategy to simulate.
 The first function, called "casino", allows you to choose between the Martingale and d'Alembert betting strategies. The Martingale strategy is a popular betting system that requires you to double your bet after every loss until you win. The idea is that when you do win, you will recover all of your losses and make a profit equal to your original bet. The d'Alembert strategy, on the other hand, is a more conservative betting system that requires you to increase your bet by one unit after every loss and decrease it by one unit after every win.
 The second function, "Martingale", simulates the Martingale betting strategy. It takes your starting capital as input and simulates the strategy until either you reach a predetermined profit or you run out of capital. 
@@ -81,8 +80,6 @@ Current money: 500
 Do you want to continue the game? (y/n): 
 Opting for "yes" would result in the game being restarted with a reshuffle and redealing of the cards, while opting for "no" would cause the game to return to the main game.
 
-
-
 Features and Coding Requirements
 Firstly, the main game implements the second and fourth coding requirements. Firstly, it employs the structure Infor to store information of main character, for instance, which pass the main character is in, how much money he holds. During the process of game, players could choose to Save, Continue, or Exit in specific pass slots. Secondly, the main game output the scripts return by input/output text files. Also the structure Infor also store itself by inputting and outputting from the file.
 Secondly, Battleship satisfy the first coding requirement. It generates random directions of the heads planes point to and random locations of planes. There are also functions programmed to check if there are any random planes positioned out of the maps and the conditions that several planes are overlapped.
@@ -90,13 +87,10 @@ Thirdly, Casino also satisfies the first coding requirement. The head and tail o
 Fourthly, Riddle implements the first and fourth requirements. Riddle will randomly generates five riddle questions from its database. What’s more, riddle will input from its files to read the questions and answer for players.
 Lastly, Blackjack satisfies the first, second, and third requirement. 1) Generation of random game sets or events. At the start of the game, a deck of cards stored as a vector is shuffled randomly to create a new game set. 2) To keep track of game status, a struct is used to store information about each card, while a vector stores the deck of cards, and a linked list stores the hand cards. 3) The use of linked lists for storing hand cards requires dynamic memory management.
 
-
-
 Extensional Libraries
 There are no non-standard libraries in C/C++ be used in our games.
-
-
 
 Compilation and execution functions
 Due to the presence of our makefile, players could simply enter make under linux environments to compile games. 
 In the start of the game, players could choose to load the last game or start a new game. By pressing the key “Enter”, the scripts would be outputted and game would proceed.
+
