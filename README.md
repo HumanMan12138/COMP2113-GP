@@ -26,6 +26,7 @@ Our objective is to find all the heads of the planes and shoot them down. Once t
   +         +++++        *+++        ++++*
  +++          *           + +        + +
                           +            +
+                          
 Secondly, the game Casino, will simulate two betting strategies: Martingale and d'Alembert. This game includes three functions that allow you to choose which betting strategy to simulate.
 The first function, called "casino", allows you to choose between the Martingale and d'Alembert betting strategies. The Martingale strategy is a popular betting system that requires you to double your bet after every loss until you win. The idea is that when you do win, you will recover all of your losses and make a profit equal to your original bet. The d'Alembert strategy, on the other hand, is a more conservative betting system that requires you to increase your bet by one unit after every loss and decrease it by one unit after every win.
 The second function, "Martingale", simulates the Martingale betting strategy. It takes your starting capital as input and simulates the strategy until either you reach a predetermined profit or you run out of capital. 
