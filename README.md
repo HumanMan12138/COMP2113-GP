@@ -35,12 +35,12 @@ After shooting, results will be printed out for the player. There will be one or
 •	'Congratulations!! No plane left, You win!!'
 
 Our objective is to find all the heads of the planes and shoot them down. Once the players have destroyed the fleet, they win that level! Have a look at the plane from four directions:
-
   *          +++          +            + 
 +++++         +           + +        + + 
   +         +++++        *+++        ++++*
  +++          *           + +        + +
                           +            +
+
                           
 Secondly, the game Casino, will simulate two betting strategies: Martingale and d'Alembert. This game includes three functions that allow you to choose which betting strategy to simulate.
 
@@ -87,6 +87,7 @@ Shuffling...
 | Dealer                | Player                 |
 -------------------------------------------------
 | Ace of Spades         | Four of Clubs          |
+-------------------------------------------------
 | Hole Card             | King of Spades         |
 -------------------------------------------------
 | Hand Value:        ?? | Hand Value:         14 |
@@ -108,6 +109,11 @@ Sample output:
 | Hand Value:        ?? | Hand Value:         19 |
 -------------------------------------------------
 
+
+|                       | Five of Clubs          |
+                      
+| Hand Value:        20 | Hand Value:         19 |
+
 Do you want to hit (h) or stand (s)? 
 
 We might decide to stand at this point to avoid the risk of busting by taking another card since our hand value of 19 is already close to 21.
@@ -119,11 +125,17 @@ After a player decides to stand in the game of Blackjack, the dealer's face-down
 Sample output 1:
 
 | Two of Hearts         |                        |
+-------------------------------------------------
 | Hand Value:        13 | Hand Value:         19 |
+-------------------------------------------------
 | Queen of Diamonds     |                        |
+-------------------------------------------------
 | Hand Value:        13 | Hand Value:         19 |
+-------------------------------------------------
 | Seven of Diamonds     |                        |
+-------------------------------------------------
 | Hand Value:        20 | Hand Value:         19 |
+-------------------------------------------------
 Dealer wins! Player hand value: 19, Dealer hand value: 20
 
 Current money: 500
