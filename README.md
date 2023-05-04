@@ -59,7 +59,7 @@ After the initial deal, players have the option to "hit" (receive additional car
 
 Once all players have finished their turn, the dealer reveals their face-down card and must hit until they have a hand value of 17 or higher. If the dealer busts, all remaining players win. If the dealer does not bust, the player with the highest hand value that doesn't exceed 21 wins.
 
-The following the format for the game's interaction, which outlines the output that the program will provide at each step and the input that is expected from you.
+The following is the format for the game's interaction, which outlines the output that the program will provide at each step and the input that is expected from you.
 Initially, the game will display your current available funds and prompt you to choose the desired betting amount.
 
 Sample output:
@@ -77,7 +77,6 @@ Once the bet is placed, the game proceeds to shuffle the deck of cards and deal 
 Sample output:
 
 Shuffling...
-
 -------------------------------------------------
 | Dealer                | Player                 |
 -------------------------------------------------
@@ -100,14 +99,12 @@ Sample output:
 
 |                       | Five of Clubs          |
 -------------------------------------------------
-
 | Hand Value:        ?? | Hand Value:         19 |
 -------------------------------------------------
-
-
 |                       | Five of Clubs          |
-                      
+-------------------------------------------------                   
 | Hand Value:        20 | Hand Value:         19 |
+-------------------------------------------------
 
 Do you want to hit (h) or stand (s)? 
 
