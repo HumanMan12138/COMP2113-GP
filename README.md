@@ -35,7 +35,7 @@ After shooting, results will be printed out for the player. There will be one or
 •	'Congratulations!! No plane left, You win!!'
 
 Our objective is to find all the heads of the planes and shoot them down. Once the players have destroyed the fleet, they win that level! Have a look at the plane from four directions:
-  *          +++          +            + 
+&nbsp;&nbsp;*          +++          +            + 
 +++++         +           + +        + + 
   +         +++++        *+++        ++++*
  +++          *           + +        + +
