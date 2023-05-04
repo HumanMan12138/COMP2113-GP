@@ -34,7 +34,8 @@ After shooting, results will be printed out for the player. There will be one or
 
 •	'Congratulations!! No plane left, You win!!'
 
-Planes would have four types, shown in the following link: https://github.com/HumanMan12138/COMP2113-GP/blob/8eccf597597ec8524549886391c89dacec72a5ce/battleplane.png
+Planes would have four types, shown in the following link:
+https://github.com/HumanMan12138/COMP2113-GP/blob/8eccf597597ec8524549886391c89dacec72a5ce/battleplane.png
                           
 Secondly, the game Casino, will simulate two betting strategies: Martingale and d'Alembert. This game includes three functions that allow you to choose which betting strategy to simulate.
 
