@@ -1,4 +1,4 @@
-COMP2113-GP
+#COMP2113-GP
 
 Group Members
 Hu Manman 3035827926
@@ -6,7 +6,6 @@ Ye Xinpeng 3033092307
 Hu Yueyue 3036105430
 Cheng Yanchao 3035772004
 Wang Hanyu 3035977991
-
 Introduction
 The game of our groups is basically a challenge game. Players need to challenge various passes to win the game. The background of game is from Nordic Mythology, before the Ragnarök, the twilight that Gods will fight against each other and most of them were going to die. Our main character, Tarnished, who is banished in the dungeon under the world tree, is going to challenge the spirits left by gods and demigods to get back his freedom. 
 There are a main game and several sub-games that characters will play. 
