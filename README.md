@@ -34,6 +34,8 @@ After shooting, results will be printed out for the player. There will be one or
 
 •	'Congratulations!! No plane left, You win!!'
 
+The arrangement of planes is 1-5-1-3
+
 Planes would have four types, shown in the following link:
 https://github.com/HumanMan12138/COMP2113-GP/blob/8eccf597597ec8524549886391c89dacec72a5ce/battleplane.png
                           
