@@ -22,14 +22,8 @@ After shooting, results will be printed out for the player. There will be one or
 •	'Great!! You shot down another plane!! There is only 1 plane left!!'
 •	'Congratulations!! No plane left, You win!!'
 
-Our objective is to find all the heads of the planes and shoot them down. Once the players have destroyed the fleet, they win that level! Have a look at the plane from four directions:
+Our objective is to find all the heads of the planes and shoot them down. Once the players have destroyed the fleet, they win that level! There are four directions of the plane.
 
-  *          +++          +            + 
-+++++         +           + +        + + 
-  +         +++++        *+++        ++++*
- +++          *           + +        + +
-                          +            +
- 
 Secondly, the game Casino, will simulate two betting strategies: Martingale and d'Alembert. This game includes three functions that allow you to choose which betting strategy to simulate.
 The first function, called "casino", allows you to choose between the Martingale and d'Alembert betting strategies. The Martingale strategy is a popular betting system that requires you to double your bet after every loss until you win. The idea is that when you do win, you will recover all of your losses and make a profit equal to your original bet. The d'Alembert strategy, on the other hand, is a more conservative betting system that requires you to increase your bet by one unit after every loss and decrease it by one unit after every win.
 
@@ -51,44 +45,11 @@ Suppose that we wish to place a wager of 500 coins.
 Sample input:
 500
 Once the bet is placed, the game proceeds to shuffle the deck of cards and deal two cards to both the dealer and the player.
-Sample output:
-Shuffling...
--------------------------------------------------
-| Dealer                | Player                 |
--------------------------------------------------
-| Ace of Spades         | Four of Clubs          |
-| Hole Card             | King of Spades         |
--------------------------------------------------
-| Hand Value:        ?? | Hand Value:         14 |
--------------------------------------------------
-Do you want to hit (h) or stand (s)?
-Our current hand value is only 14, which is quite distant from the desired value of 21, and therefore, we might consider taking an additional card.
-Sample input:
-Once the hit decision is made, the game will show the dealer's newly dealt card and the resulting hand value. The game will check whether the player has exceeded a hand value of 21; if so, the player will lose and the game will deduct coins according to the initial bet. If the player has not busted, the game will continue to offer the option of either hitting to receive additional cards or standing to keep the current hand.
-Sample output:
-|                       | Five of Clubs          |
--------------------------------------------------
-| Hand Value:        ?? | Hand Value:         19 |
--------------------------------------------------
-Do you want to hit (h) or stand (s)? 
-We might decide to stand at this point to avoid the risk of busting by taking another card since our hand value of 19 is already close to 21.
-Sample input:
-After a player decides to stand in the game of Blackjack, the dealer's face-down card (hole card) will be revealed and the dealer will then draw cards according to set rules. Then, the game will display the outcome of the game and either add or deduct coins from the player's bet accordingly. Following that, the game will display the present balance of the player and present a choice to continue playing or not.
-Sample output 1:
-| Two of Hearts         |                        |
-| Hand Value:        13 | Hand Value:         19 |
-| Queen of Diamonds     |                        |
-| Hand Value:        13 | Hand Value:         19 |
-| Seven of Diamonds     |                        |
-| Hand Value:        20 | Hand Value:         19 |
-Dealer wins! Player hand value: 19, Dealer hand value: 20
-Current money: 500
-Do you want to continue the game? (y/n): 
-Opting for "yes" would result in the game being restarted with a reshuffle and redealing of the cards, while opting for "no" would cause the game to return to the main game.
 
 Features and Coding Requirements
 Firstly, the main game implements the second and fourth coding requirements. Firstly, it employs the structure Infor to store information of main character, for instance, which pass the main character is in, how much money he holds. During the process of game, players could choose to Save, Continue, or Exit in specific pass slots. Secondly, the main game output the scripts return by input/output text files. Also the structure Infor also store itself by inputting and outputting from the file.
 Secondly, Battleship satisfy the first coding requirement. It generates random directions of the heads planes point to and random locations of planes. There are also functions programmed to check if there are any random planes positioned out of the maps and the conditions that several planes are overlapped.
+
 Thirdly, Casino also satisfies the first coding requirement. The head and tail of coin is randomly generated to decide the win or lose of the game. 
 Fourthly, Riddle implements the first and fourth requirements. Riddle will randomly generates five riddle questions from its database. What’s more, riddle will input from its files to read the questions and answer for players.
 Lastly, Blackjack satisfies the first, second, and third requirement. 1) Generation of random game sets or events. At the start of the game, a deck of cards stored as a vector is shuffled randomly to create a new game set. 2) To keep track of game status, a struct is used to store information about each card, while a vector stores the deck of cards, and a linked list stores the hand cards. 3) The use of linked lists for storing hand cards requires dynamic memory management.
